@@ -42,6 +42,9 @@
 <body>
 
   <div class="overflow-x-hidden relative w-[100]">
+
+    
+
     <nav class="bg-deepBlue">
       <div class="relative w-[1080px] mx-auto flex items-center justify-between">
         <a href="#" class="cursor-pointer py-7 pr-7">
@@ -56,7 +59,7 @@
           transition-all duration-200
           cursor-pointer
           relative
-          group">
+          group hidden lg:block">
   
           <a href="#">Payments</a>
   
@@ -70,7 +73,7 @@
           transition-all duration-200
           cursor-pointer
           relative
-          group">
+          group hidden lg:block">
   
           <a href="#">Banking</a>
   
@@ -85,7 +88,7 @@
           transition-all duration-200
           cursor-pointer
           relative
-          group">
+          group hidden lg:block">
   
           <a href="#">Corporate Card</a>
   
@@ -97,7 +100,7 @@
           transition-all duration-200
           cursor-pointer
           relative
-          group">
+          group hidden lg:block">
   
           <a href="#">Payroll</a>
   
@@ -109,7 +112,7 @@
           transition-all duration-200
           cursor-pointer
           relative
-          group">
+          group hidden lg:block">
   
           <a href="#">Resources</a>
   
@@ -124,7 +127,7 @@
           transition-all duration-200
           cursor-pointer
           relative
-          group">
+          group hidden lg:block">
   
           <a href="#">Support</a>
   
@@ -139,7 +142,7 @@
           transition-all duration-2000
           cursor-pointer
           relative
-          group">
+          group hidden lg:block">
   
           <a href="#">Pricing</a>
   
@@ -156,14 +159,14 @@
   
           <img src="./Images/india-flag.svg" alt="" width="28px" height="20px" >
   
-          <button class="py-3 px-5 cursor-pointer font-mullish text-white border-lightBlue border rounded text-sm font-bold">Log in</button>
+          <button class="py-3 px-5 cursor-pointer font-mullish text-white border-lightBlue border rounded text-sm font-bold hidden lg:block">Log in</button>
   
           <button class="py-3 px-4 
           font-mullish 
            border-lightBlue border 
            rounded text-sm font-bold bg-white text-lightBlue300 
            transition-all duration-200
-           hover:text-lightBlue500">Sign Up</button>
+           hover:text-lightBlue500 hidden lg:flex">Sign Up</button>
   
         </div>
   
@@ -173,7 +176,7 @@
     <section
       class="relative bg-deepBlue ">
   
-          <div class="w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto">
+          <div class="w-10/12 max-w-[1080px] flex lg:flex-row flex-col justify-between items-center mx-auto">
               <!-- left-part -->
               <div class="space-y-8">
                   <h1 class="text-white font-mullish font-bold text-[40px] leading-[1,2]">Power your finance, grow your business</h1>
@@ -213,12 +216,12 @@
   
       <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
   
-        <h2 class="font-mullish text-center text-2xl leading-[1.2] font-extrabold">Accept Payments with Razorpay Payment Suite</h2>
-  
+        <h2 class="font-mullish text-center text-2xl leading-[1.2] font-extrabold hidden md:block">Accept Payments with Razorpay Payment Suite</h2>
+        <h2 class="font-mullish text-center text-2xl leading-[1.2] font-extrabold block md:hidden">Explore Razorpay Payment Suite</h2>
         <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
   
         <!-- content box -->
-         <div class="w-full bg-white flex rounded-md relative p-10 py-12 min-h-[520px] border">
+         <div class="w-full bg-white flex lg:flex-row flex-col rounded-md relative p-10 py-12 min-h-[520px] border">
           <!-- left-section -->
            <div class="flex flex-col justify-between w-full">
             <h3 class="font-mullish text-[28px] leading-10 font-bold max-w-[500px]">Supercharge your business with the all-powerful
@@ -250,13 +253,13 @@
                 <span> In-depth Reporting and Insights </span>
               </li>
             </ul>
-            <div class="flex flex-row items-center space-x-4">
+            <div class="flex md:flex-row flex-col-reverse items-center space-x-4">
               <button
-              class="bg-lightBlue w-fit text-white py-[14px] px-[18px] rounded-md font-mullish 
-              font-bold hover:bg-lightBlue500 transition-all duration-200 flex flex-row">Sign Up Now</button>
-              <div class="flex items-center cursor-pointer group">
+              class="bg-lightBlue w-full md:w-fit text-white py-[14px] px-[18px] rounded-md font-mullish 
+              font-bold hover:bg-lightBlue500 transition-all duration-200 flex flex-row ">Sign Up Now</button>
+              <div class="flex md:items-center self-start cursor-pointer group">
                 <a href="#" class="font-mullish font-bold text-lightBlue500 
-                group-hover:text-grayBlue transition-all duration-200">Know More</a>
+                group-hover:text-grayBlue transition-all duration-200 ">Know More</a>
                 <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 
                 group-hover:text-grayBlue transition-all duration-200"></i>
               </div>
@@ -264,12 +267,12 @@
            </div>
   
            <img src="./Images/payment-suite.png" alt=""
-           class="max-w-[600px] absolute right-0 bottom-0">
+           class="max-w-[600px] absolute right-0 bottom-0 hidden md:max-w-[400px]  lg:max-w-[600px] md:block lg:block">
   
   
   
          </div>
-  
+
          <div class="w-full grid grid-cols-3 gap-4 mt-10">
           <!-- box1 -->
       
